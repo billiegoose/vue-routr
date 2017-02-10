@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- node
+deploy:
+  provider: npm
+  email: wmhilton@gmail.com
+  api_key:
+    secure: OmF1t+dgFkczwYza5nmtZ2uWgiV3PqygZlVBC4eb3X0iIdx8wqC6nGM7ECu2j2cxl26JIWZN8QKSLsdUXVogHsU3SjYtTkRo4ktnpHJ8A7lIqVEECkQsgAWQM7zockIDElgzzH2J6ckMl6rZpDBkQjY+CgdQQ06dQpADqWuT34tzu118PiLMSIT4fDsAa505JyamG9DQwUYDhZHwPwToadBXHE3mJwtJ0RlLxmhrqFsO/nJI9xH9/oWkBDND3vFgf29zAFhPFmsSS+0fkNtqzElt3sJNQLvgIAMZcmgoKf9NmaQYJrEGHr8cCyas/0b61AfZDhXIT2jAJJ+2dkHWg7DoP6LFVTiubdaoErPRWstsw82tPWA03/lHcB1AD+CvW+sNgSvKcsdrHdHjiLrD8FWYvcT2mERI8ZHibUdqJ8vbBMl94MkG2hc2jBG23PkmNCAHQ3g1lSiQLYQBYjoTumf5laqr3nSFY72HWdLJXEJ4AoPdZA5O0oeFSTbGOfyW3XqUB0+ZN9aGtYjdGixTm1aLmmXR7fg1U2eg6OCuFI9cgYWFv5Xs2d9/p7OPjr3NG9jxZ3sA9HSeao4rOb4xz3wkSDJ1b7wL5JHweI8ZltRbIys7UMLnZCEhcHW/WC5Qa3suc8GEgAY3eKW16vYt26MyaLbRLId5ePoNXHnu4jc=
+  on:
+    node: node
+    tags: true
+    branch: master
+    repo: wmhilton/vue-routr
