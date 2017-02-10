@@ -4,6 +4,7 @@
   "description": "Reactive routing Vue mixin",
   "main": "./vue-routr.js",
   "scripts": {
+    "test": "standard",
     "docs": "projectz && mos"
   },
   "keywords": [],
@@ -17,5 +18,8 @@
   "dependencies": {
     "history": "^4.5.1",
     "routr": "^2.1.0"
+  },
+  "devDependencies": {
+    "standard": "^8.6.0"
   }
 }
