@@ -43,7 +43,7 @@ Vue.config.optionMergeStrategies.routr = function (toVal, fromVal) {
 module.exports = {
   computed: {
     // I went ahead and put a sigil at the front just to signal that it isn't a normal property.
-    $routr () {
+    $routr: function () {
       return _state.routr
     }
   },
@@ -60,7 +60,7 @@ module.exports = {
   beforeCreate: init,
   methods: {
     // Convenience method
-    $navigate (url, state) {
+    $navigate: function (url, state) {
       history.push(url, state)
     }
   }
