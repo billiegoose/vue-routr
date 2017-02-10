@@ -2,16 +2,9 @@
   "name": "vue-routr",
   "version": "0.0.0",
   "description": "Reactive routing Vue mixin",
-  "module": "vue-routr.js",
-  "main": "build/vue-routr.js",
+  "main": "./vue-routr.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production babel vue-routr.js --out-file=build/vue-routr.js --presets=env --source-maps",
     "docs": "projectz && mos"
-  },
-  "browserify": {
-    "transform": [
-      "babelify"
-    ]
   },
   "keywords": [],
   "author": "William Hilton <wmhilton@gmail.com>",
@@ -19,15 +12,10 @@
   "maintainers": [],
   "contributors": [],
   "peerDependencies": {
-    "vue": "^2.0.0"
+    "vue": "1 || 2"
   },
   "dependencies": {
     "history": "^4.5.1",
     "routr": "^2.1.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.22.2",
-    "babel-preset-env": "^1.1.8",
-    "cross-env": "^3.1.4"
   }
 }
