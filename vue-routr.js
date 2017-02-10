@@ -9,7 +9,7 @@ function autoPickHistory (value, opts) {
   if (value === 'hash') return History.createHashHistory(opts)
   if (value === 'pushState') return History.createBrowserHistory(opts)
   if (value === 'virtual') return History.createMemoryHistory(opts)
-  throw new Error(`Invalid value '${value}' for 'history' option in vue.$routr`)
+  throw new Error("Invalid value '" + value + "' for 'history' option in vue.$routr")
 }
 
 // Create a reactive property that is protected from writing by the module closure.
@@ -29,7 +29,7 @@ function init () {
     _state.routr = router.getRoute(history.location.pathname + history.location.search + history.location.hash)
   })
   // Listen for future push state events...
-  history.listen((location, action) => {
+  history.listen(function (location, action) {
     // and update the reactive vue data.
     _state.routr = router.getRoute(location.pathname + location.search + location.hash)
   })
